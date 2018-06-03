@@ -1,7 +1,6 @@
 module Example.Composite where
 
 import ClassyPrelude
-import Control.Lens
 import Composite
 import Composite.TH
 

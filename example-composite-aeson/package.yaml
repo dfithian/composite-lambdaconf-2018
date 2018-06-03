@@ -19,6 +19,7 @@ ghc-options:
 dependencies:
   - aeson-better-errors
   - base
+  - bytestring
   - classy-prelude
   - composite-aeson
   - composite-base

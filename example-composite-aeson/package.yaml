@@ -1,0 +1,28 @@
+name: example-composite-aeson
+version: '1.0'
+maintainer: Dan Fithian
+license: MIT
+
+default-extensions:
+  - DataKinds
+  - FlexibleContexts
+  - NoImplicitPrelude
+  - OverloadedStrings
+  - TemplateHaskell
+  - TypeOperators
+
+ghc-options:
+  - -Wall
+  - -Werror
+  - -fwarn-tabs
+
+dependencies:
+  - aeson-better-errors
+  - base
+  - classy-prelude
+  - composite-aeson
+  - composite-base
+  - lens
+
+library:
+  source-dirs: src

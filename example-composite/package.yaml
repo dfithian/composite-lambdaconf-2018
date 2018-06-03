@@ -1,0 +1,24 @@
+name: example-composite
+version: '1.0'
+maintainer: Dan Fithian
+license: MIT
+
+default-extensions:
+  - DataKinds
+  - NoImplicitPrelude
+  - TemplateHaskell
+  - TypeOperators
+
+ghc-options:
+  - -Wall
+  - -Werror
+  - -fwarn-tabs
+
+dependencies:
+  - base
+  - classy-prelude
+  - composite-base
+  - lens
+
+library:
+  source-dirs: src

@@ -1,0 +1,10 @@
+resolver: lts-10.10
+packages:
+  - example-vinyl
+  - example-composite
+  - example-composite-aeson
+extra-deps:
+  - composite-base-0.5.4.0
+  - composite-aeson-0.5.4.0
+flags: {}
+extra-package-dbs: []

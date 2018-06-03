@@ -1,0 +1,25 @@
+name: example-vinyl
+version: '1.0'
+maintainer: Dan Fithian
+license: MIT
+
+default-extensions:
+  - DataKinds
+  - FlexibleContexts
+  - NoImplicitPrelude
+  - OverloadedStrings
+  - TypeOperators
+
+ghc-options:
+  - -Wall
+  - -Werror
+  - -fwarn-tabs
+
+dependencies:
+  - base
+  - classy-prelude
+  - lens
+  - vinyl
+
+library:
+  source-dirs: src

@@ -5,6 +5,7 @@ license: MIT
 
 default-extensions:
   - DataKinds
+  - FlexibleContexts
   - NoImplicitPrelude
   - TemplateHaskell
   - TypeOperators

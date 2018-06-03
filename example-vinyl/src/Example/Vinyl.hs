@@ -52,8 +52,8 @@ registerUser email user = Identity email :& user
 unregisteredUser :: Rec Identity User
 unregisteredUser = Identity (Username "dan") :& Identity (Password "*****") :& RNil
 
-extractUser :: (User ⊆ rs) => Rec f rs -> Rec f User
-extractUser = view rsubset
+projectUser :: (User ⊆ rs) => Rec f rs -> Rec f User
+projectUser = view rsubset
 
 registeredUser :: Rec Identity RegisteredUser
 registeredUser = Identity (Email "dan@dan.dan") :& Identity (Username "dan") :& Identity (Password "*****") :& RNil
@@ -63,3 +63,7 @@ verifyField = map Identity
 
 verifyUser :: Rec Maybe User -> Maybe (Rec Identity User)
 verifyUser = rtraverse verifyField
+
+goodUser, badUser :: Rec Maybe User
+goodUser = Just (Username "dan") :& Just (Password "*****") :& RNil
+badUser = Nothing :& Just (Password "*****") :& RNil
